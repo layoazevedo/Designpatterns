@@ -1,8 +1,9 @@
 <?php
-ini_set('display_errors',1);
-ini_set('display_startup_erros',1);
-error_reporting(E_ALL);
+require_once("../../../Erros/MostrarErros.php");
+require_once("../../../vendor/autoload.php");
 
-require_once("vendor/autoload.php");
+use Padroes\Criacao\FactoryMethod\Factory\FabricarCarro;
 
-echo "teste";
+$palio  = FabricarCarro::fabricarPalio();
+$vectra = FabricarCarro::fabricarVectra();
+$corsa  = FabricarCarro::fabricarCorsa();
