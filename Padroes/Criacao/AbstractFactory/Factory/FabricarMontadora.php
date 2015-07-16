@@ -19,11 +19,11 @@ class FabricarMontadora extends Fabricar {
 
 		switch ($montadora) {
             case EnumMontadoras::GM:
-                return GM::fabricaMontadora();
+                return GM::builderMontadora();
             break;
 
     		case EnumMontadoras::FIAT:
-        		return Fiat::fabricaMontadora();
+        		return Fiat::builderMontadora();
         	break;
 
         	default:

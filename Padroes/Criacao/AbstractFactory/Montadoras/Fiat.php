@@ -8,7 +8,7 @@ use Padroes\Criacao\FactoryMethod\Rodas\RodaX4;
 
 class Fiat extends Montadora {
 
-	public static function fabricaMontadora(){
+	public static function builderMontadora(){
 
 		$carros = array(
 			new Palio(new MotorV8(), new RodaX4())

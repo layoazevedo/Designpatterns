@@ -10,7 +10,7 @@ use Padroes\Criacao\FactoryMethod\Rodas\RodaSX;
 
 class GM extends Montadora {
 
-	public static function fabricaMontadora(){
+	public static function builderMontadora(){
 
 		$carros = array(
 			new Vectra(new MotorChevrolet(), new RodaSX(),
