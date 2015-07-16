@@ -36,8 +36,8 @@ class FabricarCarro extends Fabricar {
 
         	default:
        			throw new Exception($this->getErro());
-        }
-	}
+            }
+	   }
 
     private function getErro(){
         return $this->carroInvalido;
