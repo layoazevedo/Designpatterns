@@ -3,7 +3,8 @@ require_once("../../../Erros/MostrarErros.php");
 require_once("../../../vendor/autoload.php");
 
 use Padroes\Criacao\FactoryMethod\Factory\FabricarCarro;
+use Padroes\Criacao\FactoryMethod\Enum\EnunCarros;	
 
-$palio  = FabricarCarro::fabricarPalio();
-$vectra = FabricarCarro::fabricarVectra();
-$corsa  = FabricarCarro::fabricarCorsa();
+FabricarCarro::fazer(EnunCarros::PALIO);
+FabricarCarro::fazer(EnunCarros::VECTRA);
+FabricarCarro::fazer(EnunCarros::CORSA);

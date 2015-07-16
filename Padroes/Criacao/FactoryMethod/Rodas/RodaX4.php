@@ -6,27 +6,19 @@ use Padroes\Criacao\FactoryMethod\Interfaces\iRoda;
 
 class RodaX4 implements iRoda {
 
-	public function __construct(){
-		$this->rodaMontada();
-	}
+	private $aro = "18";
+	private $espessura = "50mm";
+	private $material = "Aluminio";
 
-	public function aro() {
-		return "18";
+	public function getAro() {
+		return $this->aro;
 	}
 	
-	public function espessura() {
-		return "50mm";
+	public function getEspessura() {
+		return $this->espessura;
 	}
 	
-	public function material() {
-		return "Aluminio";
+	public function getMaterial() {
+		return $this->material;
 	}
-
-	protected function rodaMontada(){
-		echo 
-			"Aro: ".$this->aro()."<br />".
-			"Espessura: ".$this->espessura()."<br />".
-			"Material: ".$this->material()."<br /><hr />";
-	}
-
 }

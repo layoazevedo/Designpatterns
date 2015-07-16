@@ -6,26 +6,19 @@ use Padroes\Criacao\FactoryMethod\Interfaces\iMotor;
 
 class MotorChevrolet implements iMotor {
 
-	public function __construct(){
-		$this->motorMontado();
+	private $cabecote = "Chevrolet 64";
+	private $pistao = "XZ-4";
+	private $valvula = "16 v";
+
+	public function getCabecote(){
+		return $this->cabecote;
 	}
 
-	public function cabecote(){
-		return "Chevrolet 64";
+	public function getPistao(){
+		return $this->pistao;
 	}
 
-	public function pistao(){
-		return "XZ-4";
-	}
-
-	public function valvula(){
-		return "16 v";
-	}
-
-	protected function motorMontado(){
-		echo 
-			"Cabecote: ".$this->cabecote()."<br />".
-			"Pistao: ".$this->pistao()."<br />".
-			"Valvula: ".$this->valvula()."<br />";
+	public function getValvula(){
+		return $this->valvula;
 	}
 }
