@@ -4,7 +4,7 @@ namespace Padroes\Criacao\AbstractFactory\Factory;
 
 use Padroes\Criacao\AbstractFactory\Abstracts\Fabricar;
 use Padroes\Criacao\AbstractFactory\Enum\EnunCarros;
-use Padroes\Criacao\AbstractFactory\Enum\EnumFabricas;
+use Padroes\Criacao\AbstractFactory\Enum\EnumMontadoras;
 use Padroes\Criacao\AbstractFactory\Montadoras\Fiat;
 use Padroes\Criacao\AbstractFactory\Montadoras\GM;
 use Exception;
